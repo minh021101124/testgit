@@ -31,11 +31,13 @@
             comboBox1 = new ComboBox();
             dataGridView1 = new DataGridView();
             label1 = new Label();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // comboBox1
             // 
+            comboBox1.BackColor = SystemColors.InactiveCaption;
             comboBox1.FormattingEnabled = true;
             comboBox1.Location = new Point(0, 0);
             comboBox1.Name = "comboBox1";
@@ -60,16 +62,27 @@
             label1.TabIndex = 2;
             label1.Text = "label1";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(422, 76);
+            label2.Name = "label2";
+            label2.Size = new Size(54, 20);
+            label2.TabIndex = 3;
+            label2.Text = "Nhincc";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
             Controls.Add(comboBox1);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -80,5 +93,6 @@
         private ComboBox comboBox1;
         private DataGridView dataGridView1;
         private Label label1;
+        private Label label2;
     }
 }
